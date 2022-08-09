@@ -9,7 +9,6 @@ async function authToken() {
     "base64"
   );
 
-  console.log(process.env);
   const data = qs.stringify({ grant_type: "client_credentials" });
 
   try {
@@ -32,7 +31,7 @@ async function authToken() {
 
 export default async function spotifyApiCall(endpoint) {
   const token = await authToken();
-  const url = `https://api.spotify.com/v1/${endpoint}`;
+  const url = `https://api.spotify.com/v1${endpoint}`;
 
   try {
     const getResponse = await axios.get(url, {
