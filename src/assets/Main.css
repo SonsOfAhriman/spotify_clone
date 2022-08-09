@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+}
+
+.App {
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-gap: 24px;
+  padding-top: 24px;
+  max-width: 1955px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 4px;
+  column-width: 185px;
+  grid-gap: 36px;
+}
+
+.group-header {
+  flex-grow: 1;
+}
+
+.group-header a {
+  line-height: 1em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+.group-header a:hover {
+  text-decoration: underline;
+}
+
+.group-header p {
+  color: #a7a7a7;
+}
+
+.main-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.see-all {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.see-all:hover {
+  text-decoration: underline !important;
+}
+
+grid-item {
+  color: black;
+}
+
+.card-info a,
+.card-info span {
+  text-decoration: none !important;
+  color: black;
+}
+
+.card {
+  padding: 16px 10px;
+  display: block;
+  width: 204px;
+  background-color: #151515;
+  border-radius: 8px;
+}
+
+.card:hover {
+  background-color: #2d2b2b;
+}
+
+.poster {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.poster img {
+  height: 190px;
+  border-radius: 8px;
+  padding: 0 8px;
+}
+
+.card-info {
+  padding: 17px 8px 0;
+}
