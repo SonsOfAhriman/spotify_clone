@@ -1,0 +1,94 @@
+:root {
+  --nav-size: 64px;
+}
+
+#nav-bar {
+  display: block;
+  grid-area: top-bar;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--nav-size);
+  background-color: rgba(2, 1, 1, 0.8);
+}
+
+#root-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 238px;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+}
+
+.main-view {
+  margin-left: 238px;
+  display: flex;
+}
+
+.first-nav {
+  max-width: 1250px;
+  min-width: 820px;
+  padding: 0 5px;
+  margin-left: 240px;
+  z-index: 2;
+  text-align: center;
+  height: var(--nav-size);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav-list li,
+.nav-list li a,
+i {
+  height: 100%;
+  line-height: var(--nav-size);
+  display: inline-block;
+  color: #d5d6d4;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.circle-button {
+  background-color: #050505; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.circle-button i {
+  vertical-align: center;
+  font-size: 24px;
+}
+
+.sign-up {
+  background-color: "transparent";
+  border: "0px";
+  fontsize: "1rem";
+  fontweight: "700";
+  color: "#a7a7a7";
+}
+
+.sign-up:hover {
+  color: white;
+}
