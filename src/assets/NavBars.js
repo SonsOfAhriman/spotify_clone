@@ -30,24 +30,8 @@ export default function NavBars() {
               width: "200px",
             }}
           >
-            <button className="sign-up" style={{}}>
-              Sign up
-            </button>
-            <button
-              style={{
-                backgroundColor: "white",
-                border: "0px",
-                padding: "14px 32px",
-                borderRadius: "24px",
-                fontSize: "1rem",
-                fontWeight: "700",
-                color: "black",
-                opacity: "none !important",
-                zIndex: "10000",
-              }}
-            >
-              Log in
-            </button>
+            <button className="sign-up">Sign up</button>
+            <button className="log-in">Log in</button>
           </div>
         </div>
       </nav>
