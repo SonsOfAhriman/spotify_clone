@@ -65,7 +65,7 @@ i {
 }
 
 .circle-button {
-  background-color: #050505; /* Green */
+  background-color: #050505;
   border: none;
   color: white;
   padding: 10px;
@@ -82,13 +82,30 @@ i {
 }
 
 .sign-up {
-  background-color: "transparent";
-  border: "0px";
-  fontsize: "1rem";
-  fontweight: "700";
-  color: "#a7a7a7";
+  background-color: black !important;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a7a7a7;
 }
 
 .sign-up:hover {
   color: white;
+}
+
+.log-in {
+  background-color: white;
+  border: 0px;
+  padding: 14px 32px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  opacity: none !important;
+  z-index: 10000;
+}
+
+.log-in:hover {
+  font-weight: 900;
+  box-shadow: 1px 4px #9a9898 50%;
 }
