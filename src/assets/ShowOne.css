@@ -1,0 +1,71 @@
+.AppShow {
+  margin: 0 auto;
+  align-items: center;
+  background-color: rgb(144, 132, 132);
+  position: relative;
+  width: 84.5vw;
+}
+
+.main-item {
+  padding: 24px 0;
+  margin: 48px 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 32px;
+}
+
+#main-image {
+  height: 232px;
+  width: 232px;
+  margin-right: 24px;
+  z-index: 9999;
+  box-shadow: 5px 10px #9a9898 50%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+
+.main-content h2 {
+  font-size: 0.75rem;
+}
+
+.main-content h1 {
+  padding: 0.08em 0px 0.14em;
+  font-size: 6rem;
+  width: 100%;
+}
+
+.internal-info {
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: row;
+  font-size: 0.875rem;
+}
+
+.internal-info a,
+.internal-info i {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.artist-info a,
+.artist-info i {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.icon-styling {
+  margin: "0 4px";
+  font-size: "0.2rem";
+  padding-top: "4px";
+}
