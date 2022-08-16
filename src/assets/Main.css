@@ -15,7 +15,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: repeat(4, minmax(185px, auto));  
   padding: 4px;
   column-width: 185px;
   grid-gap: 36px;

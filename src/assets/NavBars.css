@@ -17,7 +17,8 @@
 }
 
 #root-nav {
-  display: block;
+  display: flex;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +27,48 @@
   z-index: 100;
   background-color: #000;
 }
+
+.left-nav-first {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding-top: 24px;
+  width: 100%;
+}
+
+.left-nav-banner {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 18px;
+  padding: 0 24px;
+}
+
+.left-list {
+  padding: 0 8px;
+}
+
+.left-list-item {
+  display: flex;
+      gap: 16px;
+      padding: 0 16px;
+      line-height: 40px;
+      text-decoration: none;
+      color: rgb(164, 160, 160);
+      font-size: 14px;
+}
+
+.home {
+  color: white !important
+}
+
+
+
+.left-list-item:hover {
+  color: white;
+}
+
 
 .main-view {
   margin-left: 238px;
@@ -82,7 +125,7 @@ i {
 }
 
 .sign-up {
-  background-color: black !important;
+  background-color: transparent;
   border: 0px;
   font-size: 1rem;
   font-weight: 700;
