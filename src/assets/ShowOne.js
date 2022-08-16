@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 export default function ShowOne() {
   const location = useLocation();
-  console.log(location);
 
   const [track, setTrack] = useState(null);
 
@@ -16,7 +15,6 @@ export default function ShowOne() {
     <div className="AppShow">
       <div style={{ color: "white" }} className="main-item">
         <div className="flex-row">
-          {track && console.log(track)}
           {track && (
             <>
               <img
