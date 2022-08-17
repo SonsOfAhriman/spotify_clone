@@ -6,8 +6,8 @@ import { useMediaQuery } from "react-responsive";
 
 export default function MainContainer(props) {
 
-  const large = useMediaQuery({ query: "(min-width: 1250px)" });
-  const medium = useMediaQuery({ query: "(min-width: 1150px)" });
+  const large = useMediaQuery({ query: "(min-width: 1400px)" });
+  const medium = useMediaQuery({ query: "(min-width: 1200px)" });
 
   let size;
 
