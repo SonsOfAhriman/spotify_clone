@@ -5,7 +5,19 @@ import { useMediaQuery } from "react-responsive";
 
 
 export default function MainContainer(props) {
-  const size = (useMediaQuery({ query: "(min-width: 1400px)" }) ? 6 : 4);
+
+  const large = useMediaQuery({ query: "(min-width: 1250px)" });
+  const medium = useMediaQuery({ query: "(min-width: 1150px)" });
+
+  let size;
+
+  if (large) {
+    size = 6
+  } else if (medium) {
+    size = 5
+  } else {
+    size = 4
+  }
 
   const mainValue = useMemo(() => 
   
@@ -67,8 +79,8 @@ export default function MainContainer(props) {
 
 
   return (
-    <div className="main-component">
-      <div style={{ display: "flex" }}>
+    <div className="main-component" style={{minWidth: "0"}}>
+      <div style={{ display: "flex", minWidth: "0" }}>
         <div className="group-header">
           <a href={() => false}>{props.mainHeader}</a>
           <p>{props.secondHeader}</p>

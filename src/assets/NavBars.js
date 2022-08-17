@@ -47,6 +47,7 @@ export default function NavBars() {
           <div className="left-nav-banner">
             <img style={{ width: "48px" }} src={spotify} alt="spotify" />
             <h2 style={{ color: "white" }}>Spotify</h2>
+            <h4 style={{color: "white"}}><em>clone</em></h4>
           </div>
           <ul style={{ padding: "0", margin: "0" }}>
             <li className="left-list">

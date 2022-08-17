@@ -16,16 +16,32 @@
   background-color: rgba(2, 1, 1, 0.8);
 }
 
-#root-nav {
-  display: flex;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 238px;
-  height: 100vh;
-  z-index: 100;
-  background-color: #000;
+@media only screen and (min-width:1200px) {
+  #root-nav {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  #root-nav {
+      display: flex;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      z-index: 100;
+      background-color: #000;
+    }
 }
 
 .left-nav-first {
