@@ -28,7 +28,7 @@ function ShowAll() {
               )}
             </div>
           </div>
-          <div className="grid-container">
+          <div className="grid-container-show">
             {tracks?.items?.map((track, index) => (
               <div key={index} className="grid-item">
                 <div className="card">
